@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iamzahirul.github.io/sitemap.xml
