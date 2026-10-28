@@ -211,6 +211,10 @@ section{position:relative;z-index:1;padding:clamp(72px,11vh,130px) 0}
 .grp .path{font:400 12px var(--mono);color:var(--fg3);margin-bottom:14px}
 .grp ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 
+.bubbles{margin:0;border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px var(--line2),0 30px 80px -40px #000}
+.bubbles img{width:100%;height:auto}
+.methods{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:20px}
+.methods ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 /* experience */
 .xp{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px}
 .commits{border-left:1px solid var(--line2);padding-left:0;margin:0;list-style:none}
@@ -288,6 +292,13 @@ footer a{color:var(--fg2)}
 .tbar button{background:none;border:0;color:var(--fg2);font:500 12px var(--mono);cursor:pointer;min-height:32px;padding:0 8px}
 .tout{flex:1;overflow:auto;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;padding:16px 18px;font:400 14px/1.7 var(--mono);color:var(--fg)}
 .tout .p{color:var(--amber)} .tout .d{color:var(--fg2)} .tout .h{color:var(--cyan)} .tout a{color:var(--cyan)}
+.try{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:22px;max-width:640px;font:400 13px var(--mono);color:var(--fg3)}
+.try button,.qbar button{font:500 12.5px var(--mono);color:var(--fg);background:var(--bg2);border:1px solid var(--line2);padding:0 10px;min-height:34px;cursor:pointer;transition:border-color .2s,color .2s,transform .2s var(--ease)}
+.try button::before,.qbar button::before{content:"$ ";color:var(--amber)}
+.try button:hover,.qbar button:hover{border-color:var(--amber);color:var(--amber)}
+.try button:active,.qbar button:active{transform:scale(.97)}
+.qbar{display:flex;flex-wrap:wrap;max-height:96px;overflow:auto;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;align-items:center;gap:6px;padding:10px 18px;border-top:1px solid var(--line2);font:400 12px var(--mono);color:var(--fg3)}
+.qbar button{min-height:30px;font-size:12px;padding:0 10px}
 .tin{display:flex;gap:10px;align-items:center;padding:12px 18px;border-top:1px solid var(--line2);font:400 14px var(--mono)}
 .tin label{color:var(--amber);white-space:nowrap}
 .tin input{flex:1;min-width:0;background:transparent;border:0;color:var(--fg);font:inherit;outline:none;caret-color:var(--amber);min-height:32px}
@@ -378,6 +389,10 @@ footer a{color:var(--fg2)}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg></a>
         <button class="btn" type="button" data-open-term>$ run --interactive</button>
       </div>
+      <div class="try" aria-label="Terminal commands — click one to run it">
+        <span>try a command&nbsp;›</span>
+        <button type="button" data-cmd="help" title="list every command">help</button><button type="button" data-cmd="whoami" title="who is this">whoami</button><button type="button" data-cmd="numbers" title="the record in figures">numbers</button><button type="button" data-cmd="pipeline" title="six stages I own">pipeline</button><button type="button" data-cmd="work" title="selected studies">work</button><button type="button" data-cmd="systems" title="software shipped">systems</button><button type="button" data-cmd="stack" title="tools by category">stack</button><button type="button" data-cmd="experience" title="roles & years">experience</button><button type="button" data-cmd="education" title="degrees">education</button><button type="button" data-cmd="partners" title="30+ partners">partners</button><button type="button" data-cmd="writing" title="publications">writing</button><button type="button" data-cmd="contact" title="how to reach me">contact</button><button type="button" data-cmd="open cv" title="download CV">open cv</button><button type="button" data-cmd="open linkedin" title="LinkedIn profile">open linkedin</button><button type="button" data-cmd="open github" title="GitHub profile">open github</button><button type="button" data-cmd="sudo hire-me" title="try it">sudo hire-me</button>
+      </div>
     </div>
     <aside class="idcard rv" aria-label="Profile card">
       <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
@@ -461,7 +476,8 @@ footer a{color:var(--fg2)}
       <div><div class="label"><b>04</b> / stack</div><h2>The toolkit.</h2></div>
       <p>Picked for the job, not the trend: statistical packages the PIs trust, collection platforms that survive bad networks, and lightweight web tech that deploys in minutes.</p>
     </div>
-    <div class="stack rv" id="stackgrid"></div>
+    <figure class="bubbles rv"><img src="assets/img/stack.svg" width="1000" height="640" loading="lazy" alt="Tech stack. Analysis: Stata, R, SPSS, Python, pandas, NumPy, Jupyter, Excel/VBA. Data collection: SurveyCTO, ODK, KoboToolbox, Survey Solutions, CSPro, SurveyMonkey. Dashboards and GIS: Power BI, Tableau, Looker Studio, ArcGIS, QGIS, Google Earth. Web and software: HTML5, CSS3, JavaScript, WordPress, WooCommerce, PWA, Vercel. Workflow and design: Git, GitHub, PowerShell, LaTeX, Figma, Photoshop, Illustrator."></figure>
+    <div class="methods rv"><span class="label"><b>+</b> methods</span><ul id="methods"></ul></div>
   </div>
 </section>
 
@@ -580,6 +596,7 @@ footer a{color:var(--fg2)}
   <div class="tbox">
     <div class="tbar"><i></i><i></i><i></i><span id="ttitle">zahirul@dhaka: ~ — interactive</span><button type="button" id="closeTerm" aria-label="Close terminal">esc ✕</button></div>
     <div class="tout" id="tout" aria-live="polite"></div>
+    <div class="qbar" aria-label="All commands"><span>commands:</span><button type="button" data-cmd="help" title="list every command">help</button><button type="button" data-cmd="whoami" title="who is this">whoami</button><button type="button" data-cmd="numbers" title="the record in figures">numbers</button><button type="button" data-cmd="pipeline" title="six stages I own">pipeline</button><button type="button" data-cmd="work" title="selected studies">work</button><button type="button" data-cmd="systems" title="software shipped">systems</button><button type="button" data-cmd="stack" title="tools by category">stack</button><button type="button" data-cmd="experience" title="roles & years">experience</button><button type="button" data-cmd="education" title="degrees">education</button><button type="button" data-cmd="partners" title="30+ partners">partners</button><button type="button" data-cmd="writing" title="publications">writing</button><button type="button" data-cmd="contact" title="how to reach me">contact</button><button type="button" data-cmd="open cv" title="download CV">open cv</button><button type="button" data-cmd="open linkedin" title="LinkedIn profile">open linkedin</button><button type="button" data-cmd="open github" title="GitHub profile">open github</button><button type="button" data-cmd="sudo hire-me" title="try it">sudo hire-me</button><button type="button" data-cmd="ls" title="list folders">ls</button><button type="button" data-cmd="date" title="time in Dhaka">date</button><button type="button" data-cmd="open orcid" title="ORCID">open orcid</button><button type="button" data-cmd="open site" title="iamzahirul.com">open site</button><button type="button" data-cmd="clear" title="clear screen">clear</button></div>
     <form class="tin" id="tform" autocomplete="off"><label for="tinput">zahirul@dhaka:~$</label><input id="tinput" spellcheck="false" autocapitalize="off" aria-label="Terminal command"></form>
   </div>
 </div>
@@ -694,7 +711,7 @@ $('#filters').addEventListener('click',e=>{
 });
 $('#grid').addEventListener('pointermove',e=>{const c=e.target.closest('.card');if(!c)return;const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px');});
 
-$('#stackgrid').innerHTML=STACK.map(g=>`<div class="grp"><h3>${g[0]}</h3><div class="path">${g[1]}</div><ul>${g[2].map(t=>`<li class="chip">${esc(t)}</li>`).join('')}</ul></div>`).join('');
+$('#methods').innerHTML=STACK.find(g=>g[0]==='methods')[2].map(t=>`<li class="chip">${esc(t)}</li>`).join('');
 
 const half=PARTNERS.slice(0,15),half2=PARTNERS.slice(15);
 const row=(a,rev)=>`<div class="mrow${rev?' rev':''}" aria-hidden="true">${[...a,...a].map(p=>`<span>${esc(p)}</span>`).join('')}</div>`;
@@ -739,16 +756,25 @@ document.addEventListener('click',e=>{
 const term=$('#term'),out=$('#tout'),inp=$('#tinput');let lastFocus=null;const hist=[];let hi=0;
 const W=(h)=>{out.insertAdjacentHTML('beforeend',`<div>${h}</div>`);out.scrollTop=out.scrollHeight;};
 const CMDS={
- help:()=>`<span class="h">available commands</span>
+ help:()=>`<span class="h">about</span>
 <span class="d">whoami      </span> who is this
+<span class="d">numbers     </span> the record, in figures
+<span class="d">experience  </span> roles and years
+<span class="d">education   </span> degrees
+<span class="h">work</span>
 <span class="d">pipeline    </span> the six stages I own
 <span class="d">work        </span> selected studies
 <span class="d">systems     </span> software I've shipped
 <span class="d">stack       </span> tools by category
-<span class="d">numbers     </span> the record, in figures
-<span class="d">contact     </span> how to reach me
-<span class="d">open &lt;x&gt;    </span> cv · linkedin · github · site · orcid
-<span class="d">clear / exit</span>`,
+<span class="d">partners    </span> who I've worked with
+<span class="d">writing     </span> publications
+<span class="h">reach</span>
+<span class="d">contact     </span> email, phone, LinkedIn
+<span class="d">open &lt;x&gt;    </span> cv · linkedin · github · orcid · site
+<span class="d">open &lt;sec&gt;  </span> jump: work · systems · stack · contact …
+<span class="h">misc</span>
+<span class="d">ls · date · sudo hire-me · clear · exit</span>
+<span class="d">tip: ↑/↓ history · Tab autocomplete · Esc close</span>`,
  whoami:()=>`Md. Zahirul Islam ("Rasel") — Senior Research, MEAL &amp; MIS Specialist
 ARCED Foundation (2013–) · ARCED International (2025–) · Dhaka, Bangladesh
 13+ years running surveys, impact evaluations and RCTs; builds the data systems behind them.`,
@@ -758,6 +784,18 @@ ARCED Foundation (2013–) · ARCED International (2025–) · Dhaka, Bangladesh
  stack:()=>STACK.map(g=>`<span class="h">${g[0]}</span>: ${g[2].join(', ')}`).join('\n'),
  numbers:()=>`years ............ 13+\nassignments ...... 107\npartners ......... 30+\nlive platforms ... 82\nlargest survey ... 51,000 households\ndivisions ........ 8 of 8`,
  contact:()=>`email  <a href="mailto:zahirul.islam@arced-international.com">zahirul.islam@arced-international.com</a>\nphone  +880 1688 831919\nlinked <a href="https://www.linkedin.com/in/iamzahirul-com/" target="_blank" rel="noopener">linkedin.com/in/iamzahirul-com</a>`,
+ experience:()=>`<span class="p">2025–now </span> Research &amp; Data Management Specialist <span class="d">— ARCED International</span>
+<span class="p">2013–now </span> Senior Project Associate <span class="d">— ARCED Foundation</span>
+<span class="p">2008–2013</span> Senior Research Officer (R&amp;D) <span class="d">— Chowdhury Group</span>`,
+ education:()=>`<span class="p">2018–19</span> Professional Master of Development Studies <span class="d">— Jagannath University</span>
+<span class="p">2010–12</span> MBA, Human Resource Management <span class="d">— Atish Dipankar University</span>
+<span class="p">2005–09</span> Bachelor of Arts <span class="d">— Pangsha Govt College, NU</span>`,
+ partners:()=>PARTNERS.join(' · '),
+ writing:()=>`<span class="p">2024</span> Determinant on Economic Growth… Turkey and Bangladesh <span class="d">— J. Knowledge Economy</span>
+<span class="p">2024</span> Residents' mental health in Dhaka neighbourhoods <span class="d">— Research Square</span>
+<span class="p">2024</span> Building Sustainable Futures, Cox's Bazar <span class="d">— ARCED / GUK report</span>
+<span class="p">2022</span> COVID-19 lockdowns and tobacco use <span class="d">— GJRA</span>
+type <span class="p">open orcid</span> for the full record`,
  ls:()=>`pipeline/  work/  systems/  stack/  experience/  writing/  contact/  cv.pdf`,
  date:()=>'Dhaka: '+tf.format(new Date()),
  pwd:()=>'/home/zahirul/evidence',
@@ -771,7 +809,7 @@ function run(raw){
   if(c==='clear'){out.innerHTML='';return;}
   if(c==='exit'||c==='quit'){closeT();return;}
   if(c==='open'||c==='cd'){
-    const sec={pipeline:'#pipeline',work:'#work',systems:'#systems',stack:'#stack',experience:'#experience',writing:'#writing',contact:'#contact'}[arg];
+    const sec={pipeline:'#pipeline',work:'#work',systems:'#systems',stack:'#stack',experience:'#experience',education:'#experience',writing:'#writing',contact:'#contact'}[arg];
     if(sec){W(`<span class="d">→ jumping to ${arg}</span>`);setTimeout(()=>{closeT();location.hash=sec;},350);return;}
     if(LINKS[arg]){window.open(LINKS[arg],'_blank','noopener');W(`<span class="d">opened ${LINKS[arg]}</span>`);return;}
     W(`<span class="d">open what? try: open cv · open linkedin · open github · open work</span>`);return;
@@ -780,10 +818,10 @@ function run(raw){
   W(`<span class="d">command not found: ${esc(c)} — type </span><span class="p">help</span>`);
 }
 let booted=false;
-function boot(){
+function boot(fast){
   if(booted)return;booted=true;
   const lines=['<span class="d">[ ok ] mounting /field ........... 8 divisions</span>','<span class="d">[ ok ] loading instruments ....... SurveyCTO · ODK · Kobo</span>','<span class="d">[ ok ] running HFCs .............. 0 flags</span>','<span class="d">[ ok ] linking 107 studies, 82 systems</span>','','welcome. type <span class="p">help</span> to see what you can ask.'];
-  if(RM){lines.forEach(W);return;}
+  if(RM||fast){lines.forEach(W);return;}
   lines.forEach((l,i)=>setTimeout(()=>W(l),i*140));
 }
 function openT(){lastFocus=document.activeElement;term.classList.add('open');document.body.style.overflow='hidden';boot();setTimeout(()=>inp.focus(),60);}
@@ -792,11 +830,17 @@ $('#openTerm').addEventListener('click',openT);
 $$('[data-open-term]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();openT();}));
 $('#closeTerm').addEventListener('click',closeT);
 term.addEventListener('click',e=>{if(e.target===term)closeT();});
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-cmd]');if(!b)return;
+  const cmd=b.dataset.cmd;
+  if(!term.classList.contains('open')){lastFocus=b;term.classList.add('open');document.body.style.overflow='hidden';}
+  boot(true);run(cmd);inp.focus();
+});
 $('#tform').addEventListener('submit',e=>{e.preventDefault();run(inp.value);inp.value='';});
 inp.addEventListener('keydown',e=>{
   if(e.key==='ArrowUp'&&hist.length){hi=Math.max(0,hi-1);inp.value=hist[hi];e.preventDefault();}
   if(e.key==='ArrowDown'&&hist.length){hi=Math.min(hist.length,hi+1);inp.value=hist[hi]||'';e.preventDefault();}
-  if(e.key==='Tab'){e.preventDefault();const m=Object.keys(CMDS).concat(['open','clear','exit']).find(k=>k.startsWith(inp.value.trim()));if(m)inp.value=m+' ';}
+  if(e.key==='Tab'){e.preventDefault();const m=Object.keys(CMDS).concat(['open cv','open linkedin','open github','open orcid','open site','clear','exit','sudo hire-me']).find(k=>k.startsWith(inp.value.trim()));if(m)inp.value=m+' ';}
 });
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'&&term.classList.contains('open')){closeT();return;}
