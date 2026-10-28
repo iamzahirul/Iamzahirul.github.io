@@ -3,222 +3,808 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zahirul Islam — Data Analyst &amp; Research Specialist, Dhaka</title>
-<meta name="description" content="Official portfolio of Md. Zahirul Islam — Senior Project Associate at ARCED Foundation. 12+ years of survey research, impact evaluation and data analysis across 100+ projects in Bangladesh.">
+<title>Zahirul Islam — Research engineer · MEAL · MIS · Dhaka</title>
+<meta name="description" content="Md. Zahirul Islam (Rasel): 13+ years running surveys, impact evaluations and RCTs for universities, UN agencies and NGOs — and building the data systems and software behind them. 107 assignments, 30+ partners, 82 live platforms.">
 <meta name="author" content="Md. Zahirul Islam">
 <link rel="canonical" href="https://iamzahirul.github.io/">
+<meta name="theme-color" content="#08090b">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Zahirul Islam — Data Analyst &amp; Research Specialist, Dhaka">
-<meta property="og:description" content="Official portfolio of Md. Zahirul Islam — Senior Project Associate at ARCED Foundation. 12+ years of survey research, impact evaluation and data analysis across 100+ projects in Bangladesh.">
 <meta property="og:url" content="https://iamzahirul.github.io/">
+<meta property="og:title" content="Zahirul Islam — Surveys in the field. Pipelines in code. Evidence on the desk.">
+<meta property="og:description" content="13+ years · 107 research & evaluation assignments · 30+ international partners · 82 live web & software platforms.">
 <meta property="og:image" content="https://iamzahirul.github.io/assets/img/zahirul-square.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@raselnet97">
-<meta name="theme-color" content="#0f2a44">
-<link rel="icon" type="image/png" sizes="64x64" href="assets/img/icon-64.png">
+<link rel="icon" href="assets/img/icon-64.png" sizes="64x64">
 <link rel="apple-touch-icon" href="assets/img/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=5">
-<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Md. Zahirul Islam","alternateName":["Zahirul Islam","Zahirul Islam Rasel"],"jobTitle":"Senior Research, MEAL & MIS Specialist","worksFor":[{"@type":"Organization","name":"ARCED Foundation","url":"https://arced.foundation"},{"@type":"Organization","name":"ARCED International","url":"https://arced-international.com"}],"address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"url":"https://iamzahirul.github.io/","sameAs":["https://iamzahirul.com","https://www.linkedin.com/in/iamzahirul-com/","https://github.com/iamzahirul","https://orcid.org/0000-0002-7167-178X","https://x.com/raselnet97"]}
+</script>
+<style>
+:root{
+  --bg:#08090b; --bg2:#0e1014; --bg3:#13161b;
+  --line:#1b1e24; --line2:#2a2e36;
+  --fg:#ecebe6; --fg2:#a9adb4; --fg3:#70757e;
+  --amber:#ffb224; --amber-dim:#ffb22426; --cyan:#7dd3fc; --ok:#4ade80;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --wrap:1180px; --pad:clamp(16px,4vw,40px);
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.guides{position:fixed;inset:0;pointer-events:none;z-index:0;display:flex;justify-content:center}
+.guides i{width:min(var(--wrap),100% - 2*var(--pad));height:100%;
+  background:linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/calc(100%/6) 100%;border-right:1px solid var(--line);opacity:.55}
+a{color:inherit}
+img{max-width:100%;display:block}
+::selection{background:var(--amber);color:#111}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--amber);color:#111;padding:8px 14px;z-index:100;font:500 14px var(--mono)}
+.skip:focus{left:8px}
+.wrap{position:relative;z-index:1;width:min(var(--wrap),100% - 2*var(--pad));margin-inline:auto}
+.mono{font-family:var(--mono)}
+.label{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--fg2)}
+.label b{color:var(--amber);font-weight:500}
+
+/* nav */
+header.top{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:#08090bcc;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:500 15px var(--mono)}
+.brand .mk{display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--line2);font:600 13px var(--mono);color:var(--amber);position:relative}
+.brand .mk::after{content:"";position:absolute;right:-3px;bottom:-3px;width:6px;height:6px;background:var(--amber)}
+.brand span{color:var(--fg2)} .brand span b{color:var(--fg);font-weight:500}
+nav.links{display:flex;gap:4px;margin-left:auto}
+nav.links a{font:400 13px var(--mono);color:var(--fg2);text-decoration:none;padding:10px 10px;border-radius:4px;transition:color .2s}
+nav.links a:hover{color:var(--fg)} nav.links a i{font-style:normal;color:var(--fg3);margin-right:4px}
+.clock{font:400 12px var(--mono);color:var(--fg2);display:flex;align-items:center;gap:8px;white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 #4ade8066;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #4ade8066}70%{box-shadow:0 0 0 8px #4ade8000}100%{box-shadow:0 0 0 0 #4ade8000}}
+.kbtn{font:500 12px var(--mono);color:var(--fg);background:var(--bg3);border:1px solid var(--line2);padding:8px 10px;border-radius:6px;cursor:pointer;display:flex;gap:8px;align-items:center;min-height:36px}
+.kbtn:hover{border-color:var(--amber)}
+.kbtn kbd{font:inherit;color:var(--fg2);border:1px solid var(--line2);border-radius:3px;padding:1px 5px;font-size:11px}
+.menu{display:none}
+
+/* hero */
+.hero{padding:clamp(48px,9vh,110px) 0 56px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:end}
+.hero h1{font-weight:600;font-size:clamp(2.55rem,6.3vw,5.4rem);line-height:.98;letter-spacing:-.04em;margin:22px 0 26px}
+.ln{display:block;overflow:hidden;padding-bottom:.06em}
+.ln>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
+.ready .ln>span{transform:none}
+.ln:nth-child(2)>span{transition-delay:.12s}.ln:nth-child(3)>span{transition-delay:.24s}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero h1 .thin{font-weight:300;color:var(--fg2)}
+.lede{max-width:56ch;color:var(--fg2);font-size:clamp(16px,1.35vw,18.5px);margin:0 0 30px}
+.lede b{color:var(--fg);font-weight:500}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;font:500 14px var(--mono);text-decoration:none;border:1px solid var(--line2);color:var(--fg);background:transparent;cursor:pointer;transition:background .2s,border-color .2s,transform .2s var(--ease)}
+.btn:hover{border-color:var(--fg2)} .btn:active{transform:scale(.98)}
+.btn.pri{background:var(--amber);border-color:var(--amber);color:#111}
+.btn.pri:hover{background:#ffc04d}
+.btn svg{width:16px;height:16px}
+
+.idcard{position:relative;border:1px solid var(--line2);background:var(--bg2);padding:14px}
+.idcard .ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:#111}
+.idcard img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:grayscale(1) contrast(1.08) brightness(.92);transition:filter .8s var(--ease),transform 1.2s var(--ease)}
+.idcard:hover img{filter:none;transform:scale(1.03)}
+.idcard .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#08090bdd)}
+.scan{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--amber),transparent);box-shadow:0 0 18px var(--amber);top:0;animation:scan 4.5s var(--ease) infinite;z-index:2;opacity:.8}
+@keyframes scan{0%{top:0;opacity:0}10%{opacity:.85}90%{opacity:.85}100%{top:100%;opacity:0}}
+.corner{position:absolute;width:14px;height:14px;border-color:var(--amber);border-style:solid;z-index:3}
+.c1{top:-1px;left:-1px;border-width:2px 0 0 2px}.c2{top:-1px;right:-1px;border-width:2px 2px 0 0}.c3{bottom:-1px;left:-1px;border-width:0 0 2px 2px}.c4{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font:400 12px/1.5 var(--mono);margin-top:14px}
+.meta dt{color:var(--fg3)} .meta dd{margin:0;color:var(--fg)}
+.meta .ok{color:var(--ok)}
+.ph .tag{position:absolute;left:12px;bottom:12px;z-index:3;font:500 11px var(--mono);color:var(--fg);letter-spacing:.08em}
+.ph .tag b{color:var(--amber);font-weight:500}
+
+/* metrics */
+.metrics{border-block:1px solid var(--line);background:#0b0c0fcc}
+.metrics .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.metric{padding:26px 22px;border-left:1px solid var(--line)}
+.metric:last-child{border-right:1px solid var(--line)}
+.metric .n{font:500 clamp(2rem,4vw,3.1rem)/1 var(--mono);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.metric .n sup{font-size:.45em;color:var(--amber);vertical-align:top;margin-left:2px}
+.metric p{margin:10px 0 0;font:400 13px/1.4 var(--mono);color:var(--fg2)}
+
+/* sections */
+section{position:relative;z-index:1;padding:clamp(72px,11vh,130px) 0}
+.sh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:24px 48px;align-items:end;margin-bottom:48px}
+.sh h2{margin:14px 0 0;font-weight:600;font-size:clamp(1.9rem,3.8vw,3.1rem);line-height:1.04;letter-spacing:-.03em}
+.sh p{margin:0;color:var(--fg2);max-width:58ch}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* pipeline */
+.pipe{border:1px solid var(--line2);background:var(--bg2)}
+.stages{position:relative;display:grid;grid-template-columns:repeat(6,1fr);border-bottom:1px solid var(--line2)}
+.rail{position:absolute;left:8.33%;right:8.33%;top:47px;height:1px;background:var(--line2);pointer-events:none}
+.rail .pk{position:absolute;top:-2px;left:0;width:22px;height:5px;border-radius:3px;background:var(--amber);box-shadow:0 0 12px var(--amber);animation:flow 5.5s linear infinite}
+.rail .pk:nth-child(2){animation-delay:-1.8s;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+.rail .pk:nth-child(3){animation-delay:-3.7s}
+@keyframes flow{from{left:0;opacity:0}6%{opacity:1}94%{opacity:1}to{left:calc(100% - 22px);opacity:0}}
+.stage{position:relative;background:none;border:0;border-right:1px solid var(--line);color:var(--fg2);text-align:center;padding:26px 8px 22px;cursor:pointer;font:inherit;min-height:44px;transition:background .3s,color .3s}
+.stage:last-child{border-right:0}
+.stage .node{display:grid;place-items:center;width:44px;height:44px;margin:0 auto 14px;border:1px solid var(--line2);background:var(--bg);border-radius:50%;position:relative;z-index:1;transition:border-color .3s,background .3s,box-shadow .3s}
+.stage svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.6}
+.stage .sn{display:block;font:500 11px var(--mono);color:var(--fg3);letter-spacing:.1em}
+.stage .st{display:block;font:500 14px var(--mono);margin-top:4px}
+.stage:hover{color:var(--fg)}
+.stage[aria-selected="true"]{color:var(--fg);background:linear-gradient(180deg,var(--amber-dim),transparent 70%)}
+.stage[aria-selected="true"] .node{border-color:var(--amber);background:#1b1408;color:var(--amber);box-shadow:0 0 0 6px #ffb22412}
+.stage .bar{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--amber)}
+.stage[aria-selected="true"] .bar{animation:fill var(--cycle,5s) linear forwards}
+.paused .stage[aria-selected="true"] .bar{animation:none;width:100%}
+@keyframes fill{to{width:100%}}
+.detail{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px 48px;padding:clamp(22px,3vw,38px)}
+.detail h3{margin:8px 0 10px;font-weight:600;font-size:clamp(1.3rem,2.2vw,1.7rem);letter-spacing:-.02em}
+.detail p{margin:0;color:var(--fg2)}
+.detail .tools{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
+.chip{font:400 13px var(--mono);color:var(--fg);border:1px solid var(--line2);padding:6px 10px;background:var(--bg);transition:border-color .2s,color .2s}
+.chip:hover{border-color:var(--amber);color:var(--amber)}
+.swap{animation:swap .5s var(--ease)}
+@keyframes swap{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* field log */
+.log{border-top:1px solid var(--line2)}
+.row{display:grid;grid-template-columns:90px minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr) 28px;gap:20px;align-items:center;padding:22px 6px;border-bottom:1px solid var(--line);text-decoration:none;position:relative;transition:background .3s,padding .3s var(--ease)}
+.row::before{content:"";position:absolute;left:0;top:-1px;bottom:-1px;width:2px;background:var(--amber);transform:scaleY(0);transition:transform .35s var(--ease)}
+.row.rv{transition:opacity .8s var(--ease) var(--d,0ms),transform .8s var(--ease) var(--d,0ms),background .3s,padding .3s var(--ease)}
+.row:hover{background:linear-gradient(90deg,#ffb2240d,transparent 60%);padding-left:18px}
+.row:hover::before{transform:scaleY(1)}
+.row .yr{font:400 13px var(--mono);color:var(--fg2)}
+.row .ti{font-weight:500;font-size:clamp(16px,1.5vw,19px);letter-spacing:-.01em;line-height:1.3}
+.row .ti small{display:block;font:400 13px/1.5 var(--sans);color:var(--fg2);margin-top:4px;letter-spacing:0}
+.row .pt{font:400 13px var(--mono);color:var(--fg)}
+.row .tg{display:flex;flex-wrap:wrap;gap:6px}
+.row .tg span{font:400 11.5px var(--mono);color:var(--cyan);border:1px solid #7dd3fc33;padding:3px 7px}
+.row .ar{color:var(--fg3);transition:transform .3s var(--ease),color .3s}
+.row:hover .ar{color:var(--amber);transform:translate(3px,-3px)}
+.row .ar svg{width:18px;height:18px}
+.loghead{display:grid;grid-template-columns:90px minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr) 28px;gap:20px;padding:0 6px 12px}
+.loghead span{font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--fg3)}
+.more{margin-top:24px;font:400 14px var(--mono);color:var(--fg2)}
+.more a{color:var(--amber);text-underline-offset:4px}
+
+/* scale */
+.scale{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line2)}
+.sc{padding:clamp(22px,3vw,34px);border-right:1px solid var(--line);position:relative;overflow:hidden}
+.sc:last-child{border-right:0}
+.sc .n{font:500 clamp(2.2rem,4.6vw,3.8rem)/1 var(--mono);letter-spacing:-.04em;color:var(--fg);font-variant-numeric:tabular-nums}
+.sc p{margin:14px 0 0;color:var(--fg2);font-size:15px}
+.sc .spark{position:absolute;right:16px;top:18px;width:70px;height:28px;stroke:var(--amber);fill:none;stroke-width:1.5;opacity:.75}
+.sc .spark path{stroke-dasharray:140;stroke-dashoffset:140;transition:stroke-dashoffset 1.6s var(--ease) .3s}
+.in .sc .spark path,.sc.in .spark path{stroke-dashoffset:0}
+
+/* systems */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filters button{font:400 13px var(--mono);color:var(--fg2);background:transparent;border:1px solid var(--line2);padding:0 14px;min-height:40px;cursor:pointer;transition:all .2s}
+.filters button:hover{color:var(--fg)}
+.filters button[aria-pressed="true"]{color:#111;background:var(--fg);border-color:var(--fg)}
+.filters button i{font-style:normal;color:var(--fg3);margin-left:6px}
+.filters button[aria-pressed="true"] i{color:#555}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2)}
+.card{position:relative;background:var(--bg);padding:24px 22px 22px;text-decoration:none;display:flex;flex-direction:column;gap:10px;min-height:190px;overflow:hidden;transition:background .3s}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),#ffb2241a,transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover::before{opacity:1}
+.card:hover{background:var(--bg2)}
+.card .cat{font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--fg3);display:flex;justify-content:space-between}
+.card .cat .live{color:var(--ok);display:flex;gap:6px;align-items:center;letter-spacing:.06em}
+.card .cat .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok)}
+.card h3{margin:2px 0 0;font-size:19px;font-weight:600;letter-spacing:-.015em;line-height:1.25}
+.card p{margin:0;color:var(--fg2);font-size:14.5px;line-height:1.5}
+.card .url{margin-top:auto;font:400 12.5px var(--mono);color:var(--cyan);overflow-wrap:anywhere}
+.card.hide{display:none}
+.card.pop{animation:swap .45s var(--ease) both}
+
+/* stack */
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2)}
+.grp{background:var(--bg);padding:24px 22px}
+.grp h3{margin:0 0 4px;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.grp .path{font:400 12px var(--mono);color:var(--fg3);margin-bottom:14px}
+.grp ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+
+/* experience */
+.xp{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px}
+.commits{border-left:1px solid var(--line2);padding-left:0;margin:0;list-style:none}
+.commit{position:relative;padding:0 0 38px 30px}
+.commit::before{content:"";position:absolute;left:-6px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--amber)}
+.commit.past::before{border-color:var(--fg3)}
+.commit .h{font:400 12.5px var(--mono);color:var(--fg3)}
+.commit .h b{color:var(--amber);font-weight:500}
+.commit h3{margin:6px 0 2px;font-size:20px;font-weight:600;letter-spacing:-.015em}
+.commit .org{font:400 14px var(--mono);color:var(--fg2)}
+.commit ul{margin:12px 0 0;padding-left:18px;color:var(--fg2);font-size:15.5px}
+.commit li{margin:5px 0}
+.commit li::marker{color:var(--fg3)}
+.edu{border:1px solid var(--line2);background:var(--bg2);padding:24px}
+.edu h3{margin:0 0 16px;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--fg2)}
+.edu dl{margin:0}
+.edu dt{font:400 12px var(--mono);color:var(--fg3);margin-top:16px}
+.edu dt:first-child{margin-top:0}
+.edu dd{margin:4px 0 0;font-weight:500}
+.edu dd span{display:block;font-weight:400;color:var(--fg2);font-size:14.5px}
+.langs{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line2);font:400 13px var(--mono);color:var(--fg2)}
+
+/* partners */
+.marquee{overflow:hidden;border-block:1px solid var(--line);padding:18px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mrow{display:flex;gap:44px;width:max-content;animation:mq 60s linear infinite}
+.mrow.rev{animation-direction:reverse;animation-duration:70s;margin-top:14px}
+.marquee:hover .mrow{animation-play-state:paused}
+.mrow span{font:400 clamp(18px,2.2vw,26px)/1.2 var(--sans);color:var(--fg2);white-space:nowrap;letter-spacing:-.01em}
+.mrow span::after{content:"/";color:var(--fg3);margin-left:44px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* writing */
+.pubs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line2)}
+.pub{display:grid;grid-template-columns:90px minmax(0,1fr) auto;gap:20px;padding:24px 6px;border-bottom:1px solid var(--line)}
+.pub .yr{font:400 13px var(--mono);color:var(--fg2)}
+.pub h3{margin:0;font-size:18px;font-weight:500;letter-spacing:-.01em;line-height:1.35}
+.pub p{margin:6px 0 0;color:var(--fg2);font-size:14.5px}
+.pub .k{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--cyan)}
+.pub a.doi{font:500 13px var(--mono);color:var(--amber);white-space:nowrap;text-underline-offset:4px;align-self:start;padding:6px 0}
+
+/* contact */
+.contact{padding-bottom:60px}
+.big{font-weight:600;font-size:clamp(2.4rem,7vw,6.2rem);line-height:.95;letter-spacing:-.045em;margin:18px 0 36px}
+.big em{font-style:normal;color:var(--amber)}
+.cgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px}
+.console{border:1px solid var(--line2);background:var(--bg2);font:400 14px/1.9 var(--mono)}
+.console .bar{display:flex;gap:7px;padding:12px 14px;border-bottom:1px solid var(--line2)}
+.console .bar i{width:10px;height:10px;border-radius:50%;background:#3a3f48}
+.console .body{padding:18px 20px}
+.console .p{color:var(--amber)} .console .c{color:var(--fg3)}
+.console a{color:var(--fg);text-decoration-color:var(--line2);text-underline-offset:4px}
+.console a:hover{color:var(--cyan)}
+.copy{margin-left:8px;font:500 11px var(--mono);color:var(--fg2);background:var(--bg);border:1px solid var(--line2);padding:2px 8px;cursor:pointer;min-height:26px}
+.copy:hover{color:var(--amber);border-color:var(--amber)}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line2);border:1px solid var(--line2);align-content:start}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--bg);padding:18px;text-decoration:none;font:500 14px var(--mono);min-height:60px;transition:background .2s,color .2s}
+.links a:hover{background:var(--bg2);color:var(--amber)}
+.links a span{color:var(--fg3);font-weight:400;font-size:12px}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:28px 0 40px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font:400 12.5px var(--mono);color:var(--fg3)}
+footer a{color:var(--fg2)}
+.orgs{display:flex;gap:18px;align-items:center}
+.orgs img{height:26px;width:auto;opacity:.8;filter:grayscale(1) brightness(1.6)}
+.orgs a:hover img{opacity:1;filter:none}
+
+/* terminal modal */
+.term{position:fixed;inset:0;z-index:90;display:none;place-items:center;background:#000a;padding:16px}
+.term.open{display:grid;animation:fade .2s ease}
+@keyframes fade{from{opacity:0}}
+.tbox{width:min(760px,100%);height:min(520px,82vh);display:flex;flex-direction:column;background:#0a0b0e;border:1px solid var(--line2);box-shadow:0 30px 80px #000c;animation:rise .35s var(--ease)}
+@keyframes rise{from{transform:translateY(16px) scale(.98);opacity:0}}
+.tbar{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line2);font:400 12px var(--mono);color:var(--fg3)}
+.tbar i{width:11px;height:11px;border-radius:50%;background:#ff5f56}.tbar i:nth-child(2){background:#ffbd2e}.tbar i:nth-child(3){background:#27c93f}
+.tbar span{margin-left:auto;margin-right:auto}
+.tbar button{background:none;border:0;color:var(--fg2);font:500 12px var(--mono);cursor:pointer;min-height:32px;padding:0 8px}
+.tout{flex:1;overflow:auto;padding:16px 18px;font:400 14px/1.7 var(--mono);color:var(--fg)}
+.tout .p{color:var(--amber)} .tout .d{color:var(--fg2)} .tout .h{color:var(--cyan)} .tout a{color:var(--cyan)}
+.tin{display:flex;gap:10px;align-items:center;padding:12px 18px;border-top:1px solid var(--line2);font:400 14px var(--mono)}
+.tin label{color:var(--amber);white-space:nowrap}
+.tin input{flex:1;min-width:0;background:transparent;border:0;color:var(--fg);font:inherit;outline:none;caret-color:var(--amber);min-height:32px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;z-index:95;background:var(--fg);color:#111;font:500 13px var(--mono);padding:10px 16px;transition:all .3s var(--ease);pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* responsive */
+@media (max-width:1020px){
+  nav.links{display:none}
+  .menu{display:flex;margin-left:auto}
+  .clock .t{display:none}
+  .hero .wrap{grid-template-columns:1fr}
+  .idcard{max-width:420px}
+  .sh{grid-template-columns:1fr}
+  .stages{grid-template-columns:repeat(3,1fr)}
+  .stage:nth-child(4){border-right:0} .stage:nth-child(-n+4){border-bottom:1px solid var(--line)}
+  .rail{display:none}
+  .detail{grid-template-columns:1fr}
+  .grid,.stack{grid-template-columns:repeat(2,1fr)}
+  .scale{grid-template-columns:repeat(2,1fr)} .sc:nth-child(2){border-right:0} .sc:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .xp,.cgrid{grid-template-columns:1fr}
+  .row,.loghead{grid-template-columns:72px minmax(0,1fr) 24px}
+  .row .pt,.row .tg,.loghead span:nth-child(3),.loghead span:nth-child(4){display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .metrics .wrap{grid-template-columns:repeat(2,1fr)}
+  .metric{border-bottom:1px solid var(--line)} .metric:nth-child(2){border-right:1px solid var(--line)}
+  .stages{grid-template-columns:repeat(2,1fr)}
+  .stage{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)} .stage:nth-child(2n){border-right:0!important}
+  .grid,.stack,.links{grid-template-columns:1fr}
+  .scale{grid-template-columns:1fr} .sc{border-right:0!important;border-bottom:1px solid var(--line)}
+  .pub{grid-template-columns:1fr;gap:8px}
+  .clock{display:none}
+  .row{grid-template-columns:1fr 20px;gap:10px} .row .yr{grid-column:1/-1} .loghead{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .ln>span{transform:none}.rv{opacity:1;transform:none}
+  .scan,.rail{display:none}
+  .mrow{animation:none;flex-wrap:wrap;width:auto}
+}
+</style>
 </head>
 <body>
-<header class="site-header">
-  <nav class="wrap nav" aria-label="Main">
-    <a class="brand" href="index.html"><span class="brand-mark">ZI</span><span>Zahirul Islam</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="experience.html">Experience</a></li><li><a href="projects.html">Projects</a></li><li><a href="publications.html">Publications</a></li><li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle colour theme"></button>
-      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-    </div>
-  </nav>
+<a class="skip" href="#main">Skip to content</a>
+<div class="guides" aria-hidden="true"><i></i></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Zahirul Islam, home">
+      <span class="mk" aria-hidden="true">zi</span>
+      <span><b>zahirul</b>.islam</span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#pipeline"><i>01</i>pipeline</a>
+      <a href="#work"><i>02</i>field-log</a>
+      <a href="#systems"><i>03</i>systems</a>
+      <a href="#stack"><i>04</i>stack</a>
+      <a href="#experience"><i>05</i>experience</a>
+      <a href="#contact"><i>06</i>contact</a>
+    </nav>
+    <div class="clock" aria-label="Local time in Dhaka"><span class="dot" aria-hidden="true"></span><span>DHK</span><span class="t" id="clock">--:--:--</span></div>
+    <button class="kbtn" id="openTerm" type="button" aria-haspopup="dialog" aria-controls="term">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 17 6-6-6-6M12 19h8"/></svg>
+      <span>terminal</span><kbd>/</kbd>
+    </button>
+  </div>
 </header>
+
 <main id="main">
-
-<section class="hero">
-  <div class="wrap hero-grid">
+<section class="hero" id="top" style="padding-top:clamp(48px,9vh,110px)">
+  <div class="wrap">
     <div>
-      <span class="eyebrow">ARCED International ◆ ARCED Foundation · Dhaka, Bangladesh</span>
-      <h1>Turning field data into <span class="accent">evidence that decides.</span></h1>
-      <p class="lede">I'm Zahirul Islam, Senior Project Associate at ARCED Foundation and part of the ARCED International team. For 13+ years I have designed, run and analysed surveys, impact evaluations and randomized controlled trials — 100+ projects for universities, UN agencies, governments and NGOs.</p>
-      <div class="hero-tags">
-        <span class="chip accent">Impact evaluation &amp; RCTs</span>
-        <span class="chip">Stata · R · Python · SPSS</span>
-        <span class="chip">SurveyCTO · ODK · KoBo</span>
-        <span class="chip">Power BI · Tableau</span>
-        <span class="chip">GIS</span>
+      <div class="label"><b>●</b>&nbsp; senior research · MEAL · MIS specialist — dhaka, bangladesh</div>
+      <h1 aria-label="Surveys in the field. Pipelines in code. Evidence on the desk.">
+        <span class="ln" aria-hidden="true"><span>Surveys <span class="thin">in the</span> field.</span></span>
+        <span class="ln" aria-hidden="true"><span>Pipelines <span class="thin">in</span> <em>code.</em></span></span>
+        <span class="ln" aria-hidden="true"><span>Evidence <span class="thin">on the</span> desk.</span></span>
+      </h1>
+      <p class="lede">I'm <b>Md. Zahirul Islam</b> — friends call me Rasel. For <b>13+ years</b> I've designed, run and analysed surveys, impact evaluations and randomized controlled trials for universities, UN agencies, governments and NGOs, and built the <b>data systems and software</b> that keep those programmes running.</p>
+      <div class="ctas">
+        <a class="btn pri" href="#work">See the work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 7l10 10M17 7v10H7"/></svg></a>
+        <a class="btn" href="https://iamzahirul.com/Zahirul_Islam_CV_2026.pdf" target="_blank" rel="noopener">Download CV
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg></a>
+        <button class="btn" type="button" data-open-term>$ run --interactive</button>
       </div>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="projects.html">Explore projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+    </div>
+    <aside class="idcard rv" aria-label="Profile card">
+      <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
+      <div class="ph">
+        <div class="scan" aria-hidden="true"></div>
+        <img src="assets/img/zahirul.jpg" alt="Portrait of Md. Zahirul Islam" width="600" height="750" fetchpriority="high">
+        <div class="tag"><b>ID</b> ZI-2013 · ARCED</div>
       </div>
-    </div>
-    <div class="portrait reveal">
-      <img src="assets/img/zahirul.jpg" alt="Portrait of Md. Zahirul Islam" width="900" height="1200" fetchpriority="high">
-      <div class="portrait-badge"><strong>13+ yrs</strong>research &amp; data practice</div>
-    </div>
+      <dl class="meta">
+        <dt>role</dt><dd>Senior Research, MEAL &amp; MIS Specialist</dd>
+        <dt>orgs</dt><dd>ARCED Foundation · ARCED International</dd>
+        <dt>base</dt><dd>Dhaka, BD · 23.81° N</dd>
+        <dt>status</dt><dd class="ok">● open to assignments</dd>
+      </dl>
+    </aside>
   </div>
 </section>
 
-<section class="section tight">
-  <div class="wrap stats reveal">
-    <div class="stat"><b>100+</b><span>research projects managed</span></div>
-    <div class="stat"><b>8,400</b><span>students assessed in a single World Bank study</span></div>
-    <div class="stat"><b>6,700</b><span>garment workers surveyed for one endline</span></div>
-    <div class="stat"><b>30+</b><span>international partners served</span></div>
-  </div>
-</section>
-
-<section class="section">
+<div class="metrics" role="region" aria-label="Key numbers">
   <div class="wrap">
-    <div class="section-head">
-      <div><span class="eyebrow">What I do</span><h2>From questionnaire to dashboard</h2></div>
-      <p>I cover the whole evidence pipeline — so findings reach clients clean, on time and defensible.</p>
-    </div>
-    <div class="grid grid-3">
-      <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2M9 11h6M9 15h4"/></svg></div><h3>Study design &amp; instruments</h3><p>Sampling strategies, questionnaire development and translation, protocols and manuals, IRB and ethics compliance.</p></article>
-      <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4.5-6.2"/></svg></div><h3>Field &amp; team management</h3><p>Enumerator training, field supervision, back-checks and audio audits, daily reporting to PIs and clients — on CATI and in-person surveys.</p></article>
-      <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5M3 18l9 5 9-5"/></svg></div><h3>Digital data systems</h3><p>SurveyCTO, ODK and KoBo form programming with built-in quality checks; data pipelines, cleaning and documentation in Stata, R and Python.</p></article>
-      <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Analysis &amp; visualisation</h3><p>Descriptive and inferential analysis, rubric-based evaluation scoring, Power BI / Tableau / Looker Studio dashboards and GIS mapping.</p></article>
-      <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>M&amp;E systems &amp; evaluation</h3><p>Monitoring frameworks, indicator design and OECD-DAC evaluations for development programmes — from inception to final report.</p></article>
-      <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>Reporting &amp; proposals</h3><p>Evaluation reports, technical proposals and budgets for institutional tenders, plus web, graphics and document design.</p></article>
-    </div>
+    <div class="metric"><div class="n"><span data-count="13">13</span><sup>+</sup></div><p>years in research &amp; evaluation</p></div>
+    <div class="metric"><div class="n"><span data-count="107">107</span></div><p>research &amp; evaluation assignments</p></div>
+    <div class="metric"><div class="n"><span data-count="30">30</span><sup>+</sup></div><p>international partners</p></div>
+    <div class="metric"><div class="n"><span data-count="82">82</span></div><p>live web &amp; software platforms</p></div>
   </div>
-</section>
+</div>
 
-<section class="section band">
+<section id="pipeline">
   <div class="wrap">
-    <span class="eyebrow">Trusted by</span>
-    <h2>Partners and clients</h2>
-    <p class="muted" style="max-width:60ch">Research collaborations and consultancies delivered through ARCED Foundation and ARCED International since 2013.</p>
-    <div class="logo-wall"><span>World Bank</span><span>UC San Diego</span><span>Stanford University</span><span>Georgetown University</span><span>IFPRI &amp; IFAD</span><span>New York University</span><span>Columbia Business School</span><span>Princeton University</span><span>International Growth Centre</span><span>ILO</span><span>USAID</span><span>IFRC</span><span>Oxfam</span><span>Save the Children</span><span>Innovations for Poverty Action</span><span>National University of Singapore</span><span>MIT</span><span>Yale University</span><span>University of York</span><span>Plan International</span><span>Swisscontact</span><span>ActionAid</span><span>Action Against Hunger</span><span>GAIN</span><span>BRAC University</span><span>Sesame Workshop</span><span>Dalberg</span><span>University of Bremen</span><span>University of Minnesota</span></div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <div><span class="eyebrow">Selected work</span><h2>Featured projects</h2></div>
-      <a class="btn btn-ghost" href="projects.html">All 94 projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="sh rv">
+      <div><div class="label"><b>01</b> / pipeline</div><h2>One pipeline, owned end to end.</h2></div>
+      <p>Most studies break in the hand-offs. I work across all six stages, so the form logic, the field protocol, the cleaning code and the dashboard are written by the same person.</p>
     </div>
-    <div class="grid grid-3"><article class="card feature reveal">
-  <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5M3 18l9 5 9-5"/></svg></div>
-  <h3>Demand for Clean Air in the Workplace</h3>
-  <div class="meta"><span>UC San Diego · Nov 2025 – Mar 2026</span></div>
-  <p>Randomized field study in ready-made garment factories linking workplace air quality to worker productivity — calibrated PM2.5 monitors, smart-plug systems, attendance and productivity data, worker surveys.</p>
-  <div class="foot"><span class="chip">RCT</span><span class="chip">Sensor data</span><span class="chip">SurveyCTO</span></div>
-</article>
-<article class="card feature reveal">
-  <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
-  <h3>Brick Kiln Tracker — 43 districts</h3>
-  <div class="meta"><span>National University of Singapore · 2023 – present</span></div>
-  <p>Technology-enabled randomized study to improve monitoring and enforcement of brick-kiln pollution: tracker and dashboard across 43 districts, workshops with Department of Environment officials, longitudinal follow-ups.</p>
-  <div class="foot"><span class="chip">Dashboard</span><span class="chip">GIS</span><span class="chip">Government liaison</span></div>
-</article>
-<article class="card feature reveal">
-  <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
-  <h3>Impact Assessment of CDSP IV</h3>
-  <div class="meta"><span>IFPRI &amp; IFAD · Nov 2024 – Feb 2025</span></div>
-  <p>Coastal char livelihoods impact assessment in Noakhali — Survey Solutions and SurveyCTO templates, listing/pilot/main surveys in Companiganj, Hatiya and Subarnachar, cleaned datasets to the PIs.</p>
-  <div class="foot"><span class="chip">Survey Solutions</span><span class="chip">Stata</span><span class="chip">Impact evaluation</span></div>
-</article>
-<article class="card feature reveal">
-  <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4.5-6.2"/></svg></div>
-  <h3>Skill for Growth — Human Capital &amp; Labor-Market Frictions</h3>
-  <div class="meta"><span>University of Minnesota · Apr 2024 – Feb 2025</span></div>
-  <p>Large-scale study of manufacturing firms, managers and employees in Dhaka, Gazipur and Narayanganj: questionnaire development and testing, enumerator training, daily high-frequency checks.</p>
-  <div class="foot"><span class="chip">Firm survey</span><span class="chip">HFCs</span><span class="chip">Training</span></div>
-</article>
-<article class="card feature reveal">
-  <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2M9 11h6M9 15h4"/></svg></div>
-  <h3>EZ-Bike Battery Market — Audit &amp; Exit Surveys</h3>
-  <div class="meta"><span>Stanford, Georgetown, ADB &amp; PEDL · 2024 – 2025</span></div>
-  <p>Mixed-methods audit study of dealer price, information and reputation trade-offs in the electric three-wheeler battery market, with an incentivized consumer-preference survey.</p>
-  <div class="foot"><span class="chip">Audit study</span><span class="chip">Circular economy</span><span class="chip">SPSS</span></div>
-</article>
-<article class="card feature reveal">
-  <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
-  <h3>Household Air Filter Project</h3>
-  <div class="meta"><span>UC San Diego · Dec 2022 – Mar 2025</span></div>
-  <p>Randomized evaluation of air purifiers on health outcomes and willingness-to-pay in Pallabi and Mirpur — 40-household pilot, 1,000-household scale-up and a 2,500-household follow-on survey.</p>
-  <div class="foot"><span class="chip">RCT</span><span class="chip">Air-quality monitoring</span><span class="chip">Power BI</span></div>
-</article></div>
+    <div class="pipe rv" id="pipe">
+      <div class="stages" role="tablist" aria-label="Pipeline stages">
+        <div class="rail" aria-hidden="true"><span class="pk"></span><span class="pk"></span><span class="pk"></span></div>
+      </div>
+      <div class="detail" id="detail" role="tabpanel" aria-live="polite"></div>
+    </div>
   </div>
 </section>
 
-<section class="section tight">
-  <div class="wrap grid grid-2">
-    <article class="card reveal">
-      <span class="eyebrow">Latest learning</span>
-      <h3>Reproducible Research Fundamentals</h3>
-      <p>Completed the World Bank course on reproducible research and BIGD's crash course on research communications (2025), alongside a series on data science, analytics, Power BI and machine-learning basics with Cambridge International Qualifications.</p>
-      <div class="foot"><a href="about.html#training">See all training →</a></div>
-    </article>
-    <article class="card reveal">
-      <span class="eyebrow">Writing</span>
-      <h3>Publications &amp; reports</h3>
-      <p>Peer-reviewed articles on economic growth in developing countries and on COVID-19 lockdowns and tobacco use; a preprint on urban mental health in Dhaka; study and evaluation reports for IFRC, USAID and others.</p>
-      <div class="foot"><a href="publications.html">Browse publications →</a></div>
-    </article>
+<section id="work" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><div class="label"><b>02</b> / field-log</div><h2>Selected studies.</h2></div>
+      <p>Field experiments, evaluations and large surveys with university and multilateral teams. Ten of 107 — the full index lives on <a href="https://iamzahirul.com/research/" style="color:var(--amber)">iamzahirul.com</a>.</p>
+    </div>
+    <div class="loghead" aria-hidden="true"><span>when</span><span>study</span><span>partner</span><span>method</span><span></span></div>
+    <div class="log" id="log"></div>
+    <p class="more rv">→ <a href="https://iamzahirul.com/research/">all 107 assignments &amp; 9 case studies</a></p>
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap center">
-    <h2>Working on a survey, evaluation or data system?</h2>
-    <p class="lede" style="margin-inline:auto">I'm open to research collaborations, evaluation assignments and data-management consultancies in Bangladesh and, through ARCED International, across East Africa.</p>
-    <div class="hero-actions" style="justify-content:center;margin-top:20px">
-      <a class="btn btn-primary" href="mailto:zahirul.islam@arced.foundation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Email me</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/zahirul-islam-dhaka/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+<section style="padding-top:0" aria-label="Scale">
+  <div class="wrap">
+    <div class="scale rv">
+      <div class="sc"><svg class="spark" viewBox="0 0 70 28" aria-hidden="true"><path d="M1 24 L12 20 L22 22 L33 13 L44 15 L55 6 L69 3"/></svg><div class="n" data-count="51000">51,000</div><p>households in one survey — Dhaka Strategic Transport Plan (ADB / DTCA)</p></div>
+      <div class="sc"><svg class="spark" viewBox="0 0 70 28" aria-hidden="true"><path d="M1 20 L10 22 L20 14 L30 17 L42 9 L54 11 L69 4"/></svg><div class="n" data-count="27000">27,000</div><p>teachers screened by phone for a World Bank study</p></div>
+      <div class="sc"><svg class="spark" viewBox="0 0 70 28" aria-hidden="true"><path d="M1 22 L14 18 L24 19 L36 10 L47 12 L58 5 L69 6"/></svg><div class="n" data-count="21757">21,757</div><p>students in a 468-school World Bank RCT</p></div>
+      <div class="sc"><svg class="spark" viewBox="0 0 70 28" aria-hidden="true"><path d="M1 25 L11 21 L23 23 L32 15 L45 16 L56 8 L69 5"/></svg><div class="n" data-count="8">8</div><p>divisions of Bangladesh with fieldwork</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="systems" style="padding-top:clamp(40px,6vh,70px)">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><div class="label"><b>03</b> / systems</div><h2>82 platforms, still running.</h2></div>
+      <p>Research ends; systems shouldn't. Clinic and hospital portals, school result systems, MIS for small businesses, marketplaces, a Bangla news portal — plus open-source tools on GitHub.</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Filter systems" id="filters"></div>
+    <div class="grid" id="grid"></div>
+    <p class="more rv">→ <a href="https://iamzahirul.com/projects/">browse all 82 projects</a> · <a href="https://github.com/iamzahirul?tab=repositories">GitHub repositories</a></p>
+  </div>
+</section>
+
+<section id="stack" style="padding-top:clamp(40px,6vh,70px)">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><div class="label"><b>04</b> / stack</div><h2>The toolkit.</h2></div>
+      <p>Picked for the job, not the trend: statistical packages the PIs trust, collection platforms that survive bad networks, and lightweight web tech that deploys in minutes.</p>
+    </div>
+    <div class="stack rv" id="stackgrid"></div>
+  </div>
+</section>
+
+<section id="experience" style="padding-top:clamp(40px,6vh,70px)">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><div class="label"><b>05</b> / experience</div><h2>18 years of work. 13+ in research.</h2></div>
+      <p>From R&amp;D at Chowdhury Group to field experiments with ARCED Foundation and multi-country evaluation teams with ARCED International.</p>
+    </div>
+    <div class="xp">
+      <ol class="commits rv">
+        <li class="commit">
+          <div class="h"><b>HEAD</b> · 2025 — present</div>
+          <h3>Research &amp; Data Management Specialist</h3>
+          <div class="org">ARCED International · Dhaka / East &amp; Southern Africa</div>
+          <ul>
+            <li>Data-management lead on multi-country evaluation teams and technical proposals: data-collection tools, digital data systems and quality-assurance plans.</li>
+            <li>Builds instruments (SurveyCTO, ODK, KoBoToolbox), interview trackers, double-coding, high-frequency checks and reproducible analysis pipelines.</li>
+            <li>Writes methodology, sampling, data-management and QA sections; supports budgeting.</li>
+          </ul>
+        </li>
+        <li class="commit">
+          <div class="h"><b>main</b> · May 2013 — present</div>
+          <h3>Senior Project Associate</h3>
+          <div class="org">ARCED Foundation · Dhaka</div>
+          <ul>
+            <li>107 documented assignments: baselines, midlines, endlines, impact evaluations, RCTs, tracer studies and large listing surveys.</li>
+            <li>Research design and sampling, instrument programming with built-in checks, enumerator training, supervision, back-checks and audio audits, daily reporting to PIs.</li>
+            <li>Cleaning and analysis in Stata, R and Python; dashboards; reports.</li>
+          </ul>
+        </li>
+        <li class="commit past">
+          <div class="h">Aug 2008 — Apr 2013</div>
+          <h3>Senior Research Officer (R&amp;D)</h3>
+          <div class="org">Chowdhury Group</div>
+          <ul><li>Where the habit of building systems for other people began.</li></ul>
+        </li>
+      </ol>
+      <aside class="edu rv">
+        <h3>// education</h3>
+        <dl>
+          <dt>2018 — 2019</dt><dd>Professional Master of Development Studies<span>Jagannath University, Dhaka</span></dd>
+          <dt>2010 — 2012</dt><dd>MBA, Human Resource Management<span>Atish Dipankar University of Science &amp; Technology</span></dd>
+          <dt>2005 — 2009</dt><dd>Bachelor of Arts<span>Pangsha Government College, National University</span></dd>
+        </dl>
+        <div class="langs">lang: bangla (native) · english (fluent)<br>orcid: 0000-0002-7167-178X</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Partners" style="padding:clamp(30px,5vh,60px) 0">
+  <div class="wrap"><div class="label rv" style="margin-bottom:22px"><b>●</b>&nbsp; partners &amp; clients on delivered work — 30+</div></div>
+  <div class="marquee" id="marquee"></div>
+</section>
+
+<section id="writing" style="padding-top:clamp(40px,6vh,70px)">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><div class="label"><b>06</b> / writing</div><h2>On the record.</h2></div>
+      <p>Peer-reviewed articles, a preprint and study reports. Client evaluation reports are shared where the commissioning organisation permits.</p>
+    </div>
+    <ol class="pubs rv">
+      <li class="pub"><span class="yr">2024</span><div><span class="k">journal article</span><h3>Determinant on Economic Growth in Developing Country: A Special Case Regarding Turkey and Bangladesh</h3><p>Bazaluk, O., Kader, S. A., Zayed, N. M., Islam, Md. Zahirul, et al. · Journal of the Knowledge Economy (Springer)</p></div><a class="doi" href="https://doi.org/10.1007/s13132-024-01989-8" target="_blank" rel="noopener">DOI ↗</a></li>
+      <li class="pub"><span class="yr">2024</span><div><span class="k">preprint</span><h3>An examination of residents' mental health in particular Dhaka City neighborhoods in the context of civic health and environmental well-being</h3><p>Gomes, R., &amp; Islam, M. · Research Square</p></div><a class="doi" href="https://doi.org/10.21203/rs.3.rs-4333520/v1" target="_blank" rel="noopener">DOI ↗</a></li>
+      <li class="pub"><span class="yr">2024</span><div><span class="k">study report</span><h3>Building Sustainable Futures: Integrative Strategies for Disaster Resilience and Economic Empowerment in Cox's Bazar</h3><p>Islam, Md. Z., Chowdhury, R., &amp; Alam, Md. M. · ARCED Foundation with GUK — baseline of 908 Rohingya and host-community participants</p></div><span class="doi" style="color:var(--fg3)">on request</span></li>
+      <li class="pub"><span class="yr">2022</span><div><span class="k">journal article</span><h3>COVID-19 lockdowns and tobacco use among private university students in Dhaka, Bangladesh</h3><p>Ishaq, M., Islam, Md. E., Rahman, H., Rahman, &amp; Islam, Md. Z. · Global Journal for Research Analysis, 11(2)</p></div><a class="doi" href="https://www.worldwidejournals.com/global-journal-for-research-analysis-GJRA/" target="_blank" rel="noopener">Journal ↗</a></li>
+    </ol>
+    <p class="more rv">→ <a href="https://orcid.org/0000-0002-7167-178X">ORCID</a> · <a href="https://scholar.google.com/scholar?q=%22Md.%20Zahirul%20Islam%22">Google Scholar</a> · <a href="https://iamzahirul.com/publications/">all publications</a></p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="label rv"><b>07</b> / contact</div>
+    <p class="big rv">Got a survey, an evaluation<br>or a data system <em>to build?</em></p>
+    <div class="cgrid">
+      <div class="console rv" aria-label="Contact details">
+        <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="body">
+          <div><span class="p">$</span> whois zahirul</div>
+          <div><span class="c">email  </span> <a href="mailto:zahirul.islam@arced-international.com">zahirul.islam@arced-international.com</a><button class="copy" type="button" data-copy="zahirul.islam@arced-international.com">copy</button></div>
+          <div><span class="c">alt    </span> <a href="mailto:zahirul.islam@arced.foundation">zahirul.islam@arced.foundation</a></div>
+          <div><span class="c">phone  </span> <a href="tel:+8801688831919">+880 1688 831919</a></div>
+          <div><span class="c">based  </span> Dhaka, Bangladesh · works in BD &amp; East Africa</div>
+          <div><span class="c">open to</span> research collaborations · evaluations · MEAL &amp; data-management consultancies · web &amp; MIS builds</div>
+        </div>
+      </div>
+      <div class="links rv">
+        <a href="https://www.linkedin.com/in/iamzahirul-com/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+        <a href="https://github.com/iamzahirul" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+        <a href="https://iamzahirul.com" target="_blank" rel="noopener">iamzahirul.com <span>↗</span></a>
+        <a href="https://orcid.org/0000-0002-7167-178X" target="_blank" rel="noopener">ORCID <span>↗</span></a>
+        <a href="https://scholar.google.com/scholar?q=%22Md.%20Zahirul%20Islam%22" target="_blank" rel="noopener">Scholar <span>↗</span></a>
+        <a href="https://x.com/raselnet97" target="_blank" rel="noopener">X / Twitter <span>↗</span></a>
+        <a href="https://iamzahirul.com/Zahirul_Islam_CV_2026.pdf" target="_blank" rel="noopener">CV (PDF) <span>↓</span></a>
+        <a href="https://arced.foundation/profile?slug=zahirul-islam" target="_blank" rel="noopener">ARCED profile <span>↗</span></a>
+      </div>
     </div>
   </div>
 </section>
 </main>
-<footer class="site-footer">
+
+<footer>
   <div class="wrap">
-    <div class="sig">
-      <div class="sig-col sig-id">
-        <div class="sig-name">Zahirul Islam</div>
-        <div class="sig-title">Senior Project Associate</div>
-        <p class="sig-tag">Research & Evaluation • Project Management • Data Analytics • Monitoring & Learning</p>
-        <div class="sig-meta"><a href="tel:+8801688831919">+880 1688 831919</a><span aria-hidden="true">·</span><span>Dhaka, Bangladesh</span></div>
-        <div class="sig-links">
-          <a href="https://sites.google.com/view/zahirul97" target="_blank" rel="noopener">Google Site</a><a href="https://orcid.org/0000-0002-7167-178X" target="_blank" rel="noopener">ORCID</a><a href="https://www.linkedin.com/in/zahirul-islam-dhaka/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/zahirul-islam-dhaka" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-      <div class="sig-col sig-org">
-        <a class="sig-logo" href="https://arced-international.com" target="_blank" rel="noopener" aria-label="ARCED International">
-          <img src="assets/img/logo-arced-international.png" alt="" width="45" height="40">
-          <span class="sig-org-name">ARCED International</span>
-        </a>
-        <a href="mailto:zahirul.islam@arced-international.com">zahirul.islam@arced-international.com</a>
-        <a href="https://arced-international.com" target="_blank" rel="noopener">arced-international.com</a>
-      </div>
-      <div class="sig-col sig-org">
-        <a class="sig-logo" href="https://arced.foundation" target="_blank" rel="noopener" aria-label="ARCED Foundation">
-          <img class="logo-light" src="assets/img/logo-arced-foundation.png" alt="ARCED Foundation" width="109" height="40">
-          <img class="logo-dark" src="assets/img/logo-arced-foundation-dark.png" alt="ARCED Foundation" width="109" height="40">
-        </a>
-        <a href="mailto:zahirul.islam@arced.foundation">zahirul.islam@arced.foundation</a>
-        <a href="https://arced.foundation" target="_blank" rel="noopener">arced.foundation</a>
-      </div>
+    <div class="orgs">
+      <a href="https://arced.foundation" target="_blank" rel="noopener" aria-label="ARCED Foundation"><img src="assets/img/logo-arced-foundation-dark.png" alt="ARCED Foundation" height="26" loading="lazy"></a>
+      <a href="https://arced-international.com" target="_blank" rel="noopener" aria-label="ARCED International"><img src="assets/img/logo-arced-international.png" alt="ARCED International" height="26" loading="lazy"></a>
     </div>
-    <div class="foot-bar">
-      <div>© <span id="year">2026</span> Zahirul Islam · Dhaka, Bangladesh</div>
-      <div class="social" aria-label="Social links">
-        <a href="mailto:zahirul.islam@arced.foundation" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
-        <a href="https://www.linkedin.com/in/zahirul-islam-dhaka/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
-        <a href="https://github.com/zahirul-islam-dhaka" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A12 12 0 0 0 0 12.6c0 5.35 3.44 9.88 8.2 11.48.6.11.82-.26.82-.58v-2.1c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.33-1.78-1.33-1.78-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.26 1.84 1.26 1.07 1.86 2.8 1.32 3.49 1.01.11-.79.42-1.32.76-1.63-2.67-.31-5.47-1.36-5.47-6.06 0-1.34.47-2.43 1.24-3.29-.12-.31-.54-1.56.12-3.25 0 0 1-.33 3.3 1.25a11.3 11.3 0 0 1 6 0c2.3-1.58 3.3-1.25 3.3-1.25.66 1.69.24 2.94.12 3.25.77.86 1.24 1.95 1.24 3.29 0 4.71-2.8 5.74-5.48 6.05.43.38.81 1.12.81 2.26v3.35c0 .32.22.7.83.58A12.02 12.02 0 0 0 24 12.6 12 12 0 0 0 12 .5z"/></svg></a>
-        <a href="https://x.com/raselnet97" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2H21.5l-7.5 8.57L22.8 22h-6.9l-5.4-7.06L4.3 22H1.04l8.02-9.17L.6 2h7.07l4.88 6.45L18.24 2zm-1.14 18h1.8L7.04 3.9H5.1L17.1 20z"/></svg></a>
-        <a href="https://www.facebook.com/zahirulislam07" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.09 24 18.1 24 12.07z"/></svg></a>
-      </div>
-    </div>
+    <span>© 2026 Md. Zahirul Islam · hand-built, hosted on GitHub Pages</span>
+    <span>press <a href="#" data-open-term>/</a> for the terminal</span>
   </div>
 </footer>
-<script src="assets/js/main.js?v=5"></script>
 
+<div class="term" id="term" role="dialog" aria-modal="true" aria-labelledby="ttitle">
+  <div class="tbox">
+    <div class="tbar"><i></i><i></i><i></i><span id="ttitle">zahirul@dhaka: ~ — interactive</span><button type="button" id="closeTerm" aria-label="Close terminal">esc ✕</button></div>
+    <div class="tout" id="tout" aria-live="polite"></div>
+    <form class="tin" id="tform" autocomplete="off"><label for="tinput">zahirul@dhaka:~$</label><input id="tinput" spellcheck="false" autocapitalize="off" aria-label="Terminal command"></form>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(()=>{
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = (s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc = s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- data ---------- */
+const STAGES=[
+ {k:'design',t:'Design',h:'Research design & sampling',p:'Sampling strategy, questionnaire development and translation, protocols and field manuals, ethics and IRB coordination — written so the analysis plan is possible before a single interview.',tools:['sampling frames','questionnaire design','translation','IRB / ethics','OECD-DAC'],i:'<path d="M4 20h16M6 16l9-9 3 3-9 9H6v-3z"/>'},
+ {k:'instrument',t:'Instrument',h:'Programming the instrument',p:'Forms programmed with constraints, relevance logic and soft checks so bad answers are caught on the tablet, not in the dataset.',tools:['SurveyCTO','ODK','KoboToolbox','Survey Solutions','CSPro','SurveyMonkey'],i:'<rect x="6" y="3" width="12" height="18" rx="2"/><path d="M10 8h4M9 12h6M9 16h3"/>'},
+ {k:'field',t:'Field',h:'Field operations',p:'Enumerator training and supervision for in-person and CATI phone surveys across all 8 divisions of Bangladesh — from 40-household pilots to 51,000-household listings.',tools:['enumerator training','CATI','GPS & listing','FGD · KII · IDI','supervision'],i:'<path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/>'},
+ {k:'quality',t:'Quality',h:'Data quality, every day',p:'High-frequency checks, back-checks and audio audits run daily, with short reports to principal investigators so problems are fixed while teams are still in the field.',tools:['HFCs','back-checks','audio audits','double-coding','daily PI reports'],i:'<path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="m9 12 2 2 4-4"/>'},
+ {k:'analysis',t:'Analysis',h:'Cleaning & analysis',p:'Documented, reproducible cleaning and analysis — descriptive and inferential — handed to PIs as clean datasets with code that reruns.',tools:['Stata','R','Python · pandas · NumPy','SPSS','Excel (advanced)'],i:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'},
+ {k:'deliver',t:'Deliver',h:'Dashboards, maps & reports',p:'Dashboards, GIS maps, evaluation reports and technical proposals — and, when a programme needs it, the MIS or web platform that keeps running after the study ends.',tools:['Power BI','Tableau','Looker Studio','ArcGIS','QGIS','Google Earth'],i:'<rect x="3" y="4" width="18" height="13" rx="1"/><path d="M8 21h8M12 17v4M7 13l3-3 3 2 4-4"/>'}
+];
+const LOG=[
+ ['2025–26','Demand for Clean Air in the Workplace','Garment factories · PM2.5 monitors, smart plugs, worker productivity','UC San Diego',['RCT','sensors','SurveyCTO'],'https://iamzahirul.com/research/clean-air-in-the-workplace/'],
+ ['2024–25','Impact Assessment of CDSP IV','Coastal chars of Noakhali — remote, low-lying, hard to survey','IFPRI · IFAD',['impact eval','Survey Solutions','Stata'],'https://iamzahirul.com/research/cdsp-iv-impact-assessment/'],
+ ['2024–25','Skill for Growth','Human capital & labour-market frictions in manufacturing firms','Univ. of Minnesota',['firm survey','HFCs'],'https://iamzahirul.com/research/skill-for-growth/'],
+ ['2022–25','Household Air Filter Project','40-household pilot → 1,000 → 2,500-household follow-on, Mirpur & Pallabi','UC San Diego',['RCT','air quality','Power BI'],'https://iamzahirul.com/research/household-air-filter/'],
+ ['2023–now','Brick Kiln Tracker','Monitoring and enforcement of kiln pollution across 43 districts','NUS',['tracker','dashboard','GIS'],'https://iamzahirul.com/research/'],
+ ['2024–25','EZ-Bike Battery Market','Audit and exit surveys in the electric three-wheeler battery market','Stanford · Georgetown · ADB',['audit study','SPSS'],'https://iamzahirul.com/research/'],
+ ['2022–23','TKSS Formative Assessment RCT','468 secondary schools in Rajshahi, Mymensingh & Chattogram — 21,757 students','World Bank',['RCT','schools'],'https://iamzahirul.com/research/'],
+ ['2021–23','REACH TO TEACH','27,000-teacher phone screening and panel, all of Bangladesh','World Bank',['CATI','panel'],'https://iamzahirul.com/research/'],
+ ['2018–19','B-SEP & B-SkillFUL Tracer Studies','Tracer studies across 47 districts','ILO',['tracer','skills'],'https://iamzahirul.com/research/'],
+ ['2013','Dhaka Strategic Transport Plan — HH survey','51,000 households across 276 wards and unions','ADB · DTCA',['listing','HH survey'],'https://iamzahirul.com/research/']
+];
+const SYS=[
+ ['mis','ZI Survey Dashboard','KoBo / SurveyCTO data → indicators, cross-tabs and enumerator quality flags for NGOs and research teams.','zi-survey-demo.vercel.app'],
+ ['health','Soft-NDH','Hospital management software for a district hospital.','soft-ndh.site.je'],
+ ['health','Dr. Sujauddin Sohag','Doctor website with a live patient-queue system.','dr-sujauddin-sohag.vercel.app'],
+ ['health','Insaf Diagnostic Center','Diagnostic centre portal with serial booking.','insaf-diagnostic.vercel.app'],
+ ['edu','AIIS Pangsha','Academic website, admin panel and result portal.','aiis-pangsha.vercel.app'],
+ ['edu','101 School','Online learning platform.','101school.org'],
+ ['mis','ZI School','Results, admit cards and fee management for schools.','zi-school-demo.vercel.app'],
+ ['mis','ZI POS','Point-of-sale, billing and stock for shops — bKash-ready.','zi-pos-demo.vercel.app'],
+ ['mis','ZI Certify','Training certificates with QR verification.','zi-certify-demo.vercel.app'],
+ ['mis','AI Unified Inbox','One inbox for Messenger, WhatsApp, Instagram and web chat, with an AI sales agent.','self-hosted · demo on request'],
+ ['commerce','Zavix','Multi-vendor gadget marketplace — WooCommerce + PWA.','zavixbd.com'],
+ ['commerce','A-One Gadgets','Tech e-commerce store.','aonegadgets.com'],
+ ['media','Pangsha Sangbad 24','Dynamic Bangla online news portal.','pangshasangbad24.com'],
+ ['oss','Odk2Word','XLSForms (ODK / KoBo / SurveyCTO) → formatted, multilingual Word questionnaires.','github.com/iamzahirul/Odk2Word'],
+ ['oss','bijoy-unicode-converter-v2','Two-way Bijoy ⇄ Unicode Bangla converter, engine written from scratch.','github.com/iamzahirul/bijoy-unicode-converter-v2'],
+ ['oss','git-game-bangla','Learn real Git commands across 10 levels, fully in Bangla.','github.com/iamzahirul/git-game-bangla']
+];
+const CATS={all:'all',mis:'MIS & software',health:'healthcare',edu:'education',commerce:'e-commerce',media:'media',oss:'open source'};
+const STACK=[
+ ['statistics & analysis','~/stack/analysis',['Stata','R','SPSS','Python','pandas','NumPy','Excel (advanced)','VBA']],
+ ['data collection','~/stack/collect',['SurveyCTO','ODK','KoboToolbox','Survey Solutions','CSPro','SurveyMonkey']],
+ ['dashboards & GIS','~/stack/visualise',['Power BI','Tableau','Looker Studio','ArcGIS','QGIS','Google Earth']],
+ ['methods','~/stack/methods',['RCTs & impact evaluation','tracer studies','audit studies','CATI phone surveys','FGD / KII / IDI','HFCs & back-checks']],
+ ['web & software','~/stack/build',['HTML5 / CSS3','JavaScript','WordPress','WooCommerce','PWA','Vercel','GitHub Pages']],
+ ['workflow & design','~/stack/tools',['Git','GitHub','PowerShell','LaTeX','Figma','Photoshop','Illustrator']]
+];
+const PARTNERS=['UC San Diego','Stanford University','Georgetown University','New York University','Columbia Business School','Princeton University','MIT','Yale University','University of Minnesota','National University of Singapore','University of York','University of Bremen','BRAC University','World Bank','IFPRI & IFAD','ILO','USAID','Asian Development Bank','International Growth Centre','IFRC','Innovations for Poverty Action','Oxfam','Save the Children','Plan International','Swisscontact','Action Against Hunger','GAIN','Sesame Workshop','Dalberg'];
+
+/* ---------- render ---------- */
+const stagesEl=$('.stages'), detail=$('#detail');
+STAGES.forEach((s,i)=>{
+  const b=document.createElement('button');
+  b.className='stage';b.type='button';b.setAttribute('role','tab');b.id='st-'+s.k;b.setAttribute('aria-controls','detail');
+  b.innerHTML=`<span class="node"><svg viewBox="0 0 24 24" aria-hidden="true">${s.i}</svg></span><span class="sn">0${i+1}</span><span class="st">${s.t}</span><span class="bar"></span>`;
+  b.addEventListener('click',()=>{select(i);stop();});
+  stagesEl.appendChild(b);
+});
+let cur=0,timer=null;const CYCLE=5000;
+function select(i){
+  cur=i;
+  $$('.stage').forEach((b,j)=>{b.setAttribute('aria-selected',j===i);b.tabIndex=j===i?0:-1;});
+  const s=STAGES[i];
+  detail.setAttribute('aria-labelledby','st-'+s.k);
+  detail.innerHTML=`<div class="swap"><div class="label"><b>stage 0${i+1}</b> / ${s.k}</div><h3>${s.h}</h3><p>${s.p}</p></div><div class="tools swap">${s.tools.map(t=>`<span class="chip">${esc(t)}</span>`).join('')}</div>`;
+}
+function start(){ if(RM) {$('#pipe').classList.add('paused');return;} stop(true); $('#pipe').classList.remove('paused'); timer=setInterval(()=>select((cur+1)%STAGES.length),CYCLE);}
+function stop(keep){ clearInterval(timer); timer=null; if(!keep) $('#pipe').classList.add('paused'); }
+document.documentElement.style.setProperty('--cycle',CYCLE+'ms');
+stagesEl.addEventListener('keydown',e=>{
+  if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;
+  e.preventDefault();stop();
+  let n=e.key==='ArrowRight'?(cur+1)%6:e.key==='ArrowLeft'?(cur+5)%6:e.key==='Home'?0:5;
+  select(n);$$('.stage')[n].focus();
+});
+select(0);
+
+$('#log').innerHTML=LOG.map(r=>`<a class="row rv" href="${r[5]}" target="_blank" rel="noopener">
+  <span class="yr">${r[0]}</span>
+  <span class="ti">${esc(r[1])}<small>${esc(r[2])}</small></span>
+  <span class="pt">${esc(r[3])}</span>
+  <span class="tg">${r[4].map(t=>`<span>${esc(t)}</span>`).join('')}</span>
+  <span class="ar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>`).join('');
+
+const counts={all:SYS.length};SYS.forEach(s=>counts[s[0]]=(counts[s[0]]||0)+1);
+$('#filters').innerHTML=Object.keys(CATS).map((k,i)=>`<button type="button" data-f="${k}" aria-pressed="${i===0}">${CATS[k]}<i>${counts[k]||0}</i></button>`).join('');
+$('#grid').innerHTML=SYS.map(s=>{
+  const isUrl=!s[3].includes(' ');
+  const tag=isUrl?'a':'div';
+  const href=isUrl?` href="https://${s[3]}" target="_blank" rel="noopener"`:'';
+  return `<${tag} class="card" data-c="${s[0]}"${href}><div class="cat"><span>${CATS[s[0]]}</span>${s[0]==='oss'?'<span>repo</span>':'<span class="live">live</span>'}</div><h3>${esc(s[1])}</h3><p>${esc(s[2])}</p><span class="url">${esc(s[3])}</span></${tag}>`;
+}).join('');
+$('#filters').addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  $$('#filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const f=b.dataset.f;
+  $$('#grid .card').forEach((c,i)=>{const show=f==='all'||c.dataset.c===f;c.classList.toggle('hide',!show);c.classList.remove('pop');if(show&&!RM){void c.offsetWidth;c.style.animationDelay=(i%6)*40+'ms';c.classList.add('pop');}});
+});
+$('#grid').addEventListener('pointermove',e=>{const c=e.target.closest('.card');if(!c)return;const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px');});
+
+$('#stackgrid').innerHTML=STACK.map(g=>`<div class="grp"><h3>${g[0]}</h3><div class="path">${g[1]}</div><ul>${g[2].map(t=>`<li class="chip">${esc(t)}</li>`).join('')}</ul></div>`).join('');
+
+const half=PARTNERS.slice(0,15),half2=PARTNERS.slice(15);
+const row=(a,rev)=>`<div class="mrow${rev?' rev':''}" aria-hidden="true">${[...a,...a].map(p=>`<span>${esc(p)}</span>`).join('')}</div>`;
+$('#marquee').innerHTML=`<p class="sr" style="position:absolute;left:-9999px">${PARTNERS.join(', ')}</p>`+row(half)+row(half2,true);
+
+/* ---------- motion ---------- */
+requestAnimationFrame(()=>document.body.classList.add('ready'));
+const fmt=n=>n.toLocaleString('en-US');
+function countUp(el){
+  const end=+el.dataset.count; if(RM){el.textContent=fmt(end);return;}
+  const t0=performance.now(),d=1400;
+  const step=t=>{const p=Math.min(1,(t-t0)/d),e=1-Math.pow(1-p,4);el.textContent=fmt(Math.round(end*e));if(p<1)requestAnimationFrame(step);};
+  requestAnimationFrame(step);
+}
+const io=new IntersectionObserver(es=>es.forEach(en=>{
+  if(!en.isIntersecting)return;
+  const el=en.target; el.classList.add('in');
+  $$('[data-count]',el).forEach(countUp);
+  if(el.id==='pipe') start();
+  io.unobserve(el);
+}),{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+$$('.rv').forEach(el=>io.observe(el));
+io.observe($('.metrics'));
+$$('.log .row').forEach((r,i)=>r.style.setProperty('--d',(i%5)*50+'ms'));
+$('#pipe').addEventListener('mouseenter',()=>stop(true));
+$('#pipe').addEventListener('mouseleave',()=>{ if(!$('#pipe').classList.contains('paused')) start(); });
+
+/* clock */
+const clk=$('#clock');
+const tf=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Dhaka',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+const tick=()=>clk.textContent=tf.format(new Date())+' BST';tick();setInterval(tick,1000);
+
+/* toast + copy */
+const toast=$('#toast');let tt;
+function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('show'),2600);}
+document.addEventListener('click',e=>{
+  const c=e.target.closest('[data-copy]');if(!c)return;
+  navigator.clipboard?.writeText(c.dataset.copy).then(()=>say('copied: '+c.dataset.copy),()=>say('copy failed — select the address instead'));
+});
+
+/* ---------- terminal ---------- */
+const term=$('#term'),out=$('#tout'),inp=$('#tinput');let lastFocus=null;const hist=[];let hi=0;
+const W=(h)=>{out.insertAdjacentHTML('beforeend',`<div>${h}</div>`);out.scrollTop=out.scrollHeight;};
+const CMDS={
+ help:()=>`<span class="h">available commands</span>
+<span class="d">whoami      </span> who is this
+<span class="d">pipeline    </span> the six stages I own
+<span class="d">work        </span> selected studies
+<span class="d">systems     </span> software I've shipped
+<span class="d">stack       </span> tools by category
+<span class="d">numbers     </span> the record, in figures
+<span class="d">contact     </span> how to reach me
+<span class="d">open &lt;x&gt;    </span> cv · linkedin · github · site · orcid
+<span class="d">clear / exit</span>`,
+ whoami:()=>`Md. Zahirul Islam ("Rasel") — Senior Research, MEAL &amp; MIS Specialist
+ARCED Foundation (2013–) · ARCED International (2025–) · Dhaka, Bangladesh
+13+ years running surveys, impact evaluations and RCTs; builds the data systems behind them.`,
+ pipeline:()=>STAGES.map((s,i)=>`<span class="p">0${i+1}</span> ${s.t.padEnd(11)} <span class="d">${s.tools.slice(0,4).join(', ')}</span>`).join('\n'),
+ work:()=>LOG.map(r=>`<span class="d">${r[0].padEnd(9)}</span> ${esc(r[1])} <span class="d">— ${esc(r[3])}</span>`).join('\n'),
+ systems:()=>`82 live platforms. a few:\n`+SYS.slice(0,10).map(s=>`<span class="p">›</span> ${esc(s[1])} <span class="d">${esc(s[3])}</span>`).join('\n'),
+ stack:()=>STACK.map(g=>`<span class="h">${g[0]}</span>: ${g[2].join(', ')}`).join('\n'),
+ numbers:()=>`years ............ 13+\nassignments ...... 107\npartners ......... 30+\nlive platforms ... 82\nlargest survey ... 51,000 households\ndivisions ........ 8 of 8`,
+ contact:()=>`email  <a href="mailto:zahirul.islam@arced-international.com">zahirul.islam@arced-international.com</a>\nphone  +880 1688 831919\nlinked <a href="https://www.linkedin.com/in/iamzahirul-com/" target="_blank" rel="noopener">linkedin.com/in/iamzahirul-com</a>`,
+ ls:()=>`pipeline/  work/  systems/  stack/  experience/  writing/  contact/  cv.pdf`,
+ date:()=>'Dhaka: '+tf.format(new Date()),
+ pwd:()=>'/home/zahirul/evidence',
+ sudo:()=>`nice try. but you can <a href="mailto:zahirul.islam@arced-international.com?subject=Assignment%20enquiry">email me</a> — that works better than root.`
+};
+const LINKS={cv:'https://iamzahirul.com/Zahirul_Islam_CV_2026.pdf',linkedin:'https://www.linkedin.com/in/iamzahirul-com/',github:'https://github.com/iamzahirul',site:'https://iamzahirul.com',orcid:'https://orcid.org/0000-0002-7167-178X'};
+function run(raw){
+  const line=raw.trim();W(`<span class="p">zahirul@dhaka:~$</span> ${esc(line)}`);
+  if(!line)return;hist.push(line);hi=hist.length;
+  const [c,arg]=line.toLowerCase().split(/\s+/);
+  if(c==='clear'){out.innerHTML='';return;}
+  if(c==='exit'||c==='quit'){closeT();return;}
+  if(c==='open'||c==='cd'){
+    const sec={pipeline:'#pipeline',work:'#work',systems:'#systems',stack:'#stack',experience:'#experience',writing:'#writing',contact:'#contact'}[arg];
+    if(sec){W(`<span class="d">→ jumping to ${arg}</span>`);setTimeout(()=>{closeT();location.hash=sec;},350);return;}
+    if(LINKS[arg]){window.open(LINKS[arg],'_blank','noopener');W(`<span class="d">opened ${LINKS[arg]}</span>`);return;}
+    W(`<span class="d">open what? try: open cv · open linkedin · open github · open work</span>`);return;
+  }
+  if(CMDS[c]){W(`<pre style="margin:0;font:inherit;white-space:pre-wrap">${CMDS[c]()}</pre>`);return;}
+  W(`<span class="d">command not found: ${esc(c)} — type </span><span class="p">help</span>`);
+}
+let booted=false;
+function boot(){
+  if(booted)return;booted=true;
+  const lines=['<span class="d">[ ok ] mounting /field ........... 8 divisions</span>','<span class="d">[ ok ] loading instruments ....... SurveyCTO · ODK · Kobo</span>','<span class="d">[ ok ] running HFCs .............. 0 flags</span>','<span class="d">[ ok ] linking 107 studies, 82 systems</span>','','welcome. type <span class="p">help</span> to see what you can ask.'];
+  if(RM){lines.forEach(W);return;}
+  lines.forEach((l,i)=>setTimeout(()=>W(l),i*140));
+}
+function openT(){lastFocus=document.activeElement;term.classList.add('open');document.body.style.overflow='hidden';boot();setTimeout(()=>inp.focus(),60);}
+function closeT(){term.classList.remove('open');document.body.style.overflow='';lastFocus&&lastFocus.focus&&lastFocus.focus();}
+$('#openTerm').addEventListener('click',openT);
+$$('[data-open-term]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();openT();}));
+$('#closeTerm').addEventListener('click',closeT);
+term.addEventListener('click',e=>{if(e.target===term)closeT();});
+$('#tform').addEventListener('submit',e=>{e.preventDefault();run(inp.value);inp.value='';});
+inp.addEventListener('keydown',e=>{
+  if(e.key==='ArrowUp'&&hist.length){hi=Math.max(0,hi-1);inp.value=hist[hi];e.preventDefault();}
+  if(e.key==='ArrowDown'&&hist.length){hi=Math.min(hist.length,hi+1);inp.value=hist[hi]||'';e.preventDefault();}
+  if(e.key==='Tab'){e.preventDefault();const m=Object.keys(CMDS).concat(['open','clear','exit']).find(k=>k.startsWith(inp.value.trim()));if(m)inp.value=m+' ';}
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&term.classList.contains('open')){closeT();return;}
+  const typing=/input|textarea|select/i.test(document.activeElement.tagName);
+  if(!typing&&(e.key==='/'||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'))){e.preventDefault();openT();}
+  if(term.classList.contains('open')&&e.key==='Tab'&&document.activeElement!==inp){
+    const f=$$('button,input',term);const first=f[0],last=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
+});
+})();
+</script>
 </body>
 </html>
